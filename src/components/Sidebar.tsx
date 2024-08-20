@@ -115,7 +115,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   to="/"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium duration-300 ease-in-out hover:bg-middark dark:hover:bg-meta-4 ${
                    ( pathname === '/' || pathname.includes('dashboard') )&&
-                    'text-black bg-middark dark:bg-meta-4'
+                    'dark:text-white bg-middark dark:bg-orange'
                   }`}
                 >
                  <img src={HomeIcon} alt="Logo" />
@@ -143,7 +143,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium  duration-300 ease-in-out hover:bg-middark dark:hover:bg-meta-4 ${
                           (pathname === '/forms' ||
                             pathname.includes('forms')) &&
-                          'bg-middark dark:bg-meta-4'
+                          ' bg-middark dark:bg-orange dark:text-white'
                         }`}
                         onClick={(e) => {
                           e.preventDefault();
@@ -209,24 +209,46 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         <ul className="mt-4 mb-5.5 flex flex-col gap-2.5 pl-6">
                           <li>
                             <NavLink
-                              to="/forms/form-elements"
+                              to="#"
                               className={({ isActive }) =>
-                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
+                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-orange ' +
                                 (isActive && '!text-black')
                               }
                             >
-                              Form Elements
+                              User Profile
                             </NavLink>
                           </li>
                           <li>
                             <NavLink
-                              to="/forms/form-layout"
+                              to="#"
                               className={({ isActive }) =>
-                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
+                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-orange ' +
                                 (isActive && '!text-black')
                               }
                             >
-                              Form Layout
+                              Identity Verification
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to="/security"
+                              className={({ isActive }) =>
+                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-orange ' +
+                                (isActive && '!text-black')
+                              }
+                            >
+                              Security
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to="#"
+                              className={({ isActive }) =>
+                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-orange ' +
+                                (isActive && '!text-black')
+                              }
+                            >
+                              Payment
                             </NavLink>
                           </li>
                         </ul>
@@ -249,7 +271,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         to="#"
                         className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium  duration-300 ease-in-out hover:bg-middark dark:hover:bg-meta-4 ${
                           (pathname === '/ui' || pathname.includes('ui')) &&
-                          'bg-middark dark:bg-meta-4'
+                          'dark:text-white bg-middark dark:bg-orange'
                         }`}
                         onClick={(e) => {
                           e.preventDefault();
@@ -319,24 +341,24 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         <ul className="mt-4 mb-5.5 flex flex-col gap-2.5 pl-6">
                           <li>
                             <NavLink
-                              to="/ui/alerts"
+                              to="#"
                               className={({ isActive }) =>
-                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
+                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-orange ' +
                                 (isActive && '!text-black')
                               }
                             >
-                              Alerts
+                              List
                             </NavLink>
                           </li>
                           <li>
                             <NavLink
-                              to="/ui/buttons"
+                              to="#"
                               className={({ isActive }) =>
-                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ' +
+                                'group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-orange ' +
                                 (isActive && '!text-black')
                               }
                             >
-                              Buttons
+                              Payment History
                             </NavLink>
                           </li>
                         </ul>
@@ -354,7 +376,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   to="/tables"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium  duration-300 ease-in-out hover:bg-middark dark:hover:bg-meta-4 ${
                     pathname.includes('tables') &&
-                    'bg-middark dark:bg-meta-4'
+                    'dark:text-white bg-middark dark:bg-orange'
                   }`}
                 >
                   <svg
@@ -386,7 +408,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                       </clipPath>
                     </defs>
                   </svg>
-                  Settings
+                  Referral
                 </NavLink>
               </li>
               {/* <!-- Menu Item Referral --> */}
@@ -396,7 +418,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   to="/chart"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium  duration-300 ease-in-out hover:bg-middark dark:hover:bg-meta-4 ${
                     pathname.includes('chart') &&
-                    'bg-middark dark:bg-meta-4'
+                    ' bg-middark dark:bg-orange dark:text-white'
                   }`}
                 >
                   <svg
@@ -438,7 +460,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   to="/settings"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium  duration-300 ease-in-out hover:bg-middark dark:hover:bg-meta-4 ${
                     pathname.includes('settings') &&
-                    'bg-middark dark:bg-meta-4'
+                    'dark:text-white bg-middark dark:bg-orange'
                   }`}
                 >
                   <svg

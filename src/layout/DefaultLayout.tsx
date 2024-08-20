@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
+
 
 const DefaultLayout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,15 +24,20 @@ const DefaultLayout = () => {
 
           {/* <!-- ===== Main Content Start ===== --> */}
           <main>
-            <div className="mx-auto max-w-screen-2xl p-0">
+            <div className="mx-auto max-w-screen-2xl p-0 bg-white dark:bg-boxdark">
               <Outlet />
             </div>
           </main>
           {/* <!-- ===== Main Content End ===== --> */}
+           {/* <!-- ===== Footer Start ===== --> */}
+      <Footer/>
+          {/* <!-- ===== Footer End ===== --> */}
         </div>
         {/* <!-- ===== Content Area End ===== --> */}
+         
       </div>
       {/* <!-- ===== Page Wrapper End ===== --> */}
+     
     </div>
   );
 };
