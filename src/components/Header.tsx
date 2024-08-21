@@ -21,7 +21,7 @@ const Header = (props: {
           </Link>
         </div>
 
-        <div className="mx-auto mt-4.5 mb-5.5 grid  grid-cols-3 rounded-md py-2.5 invisible lg:visible">
+        <div className="mx-auto mt-4.5 mb-5.5 grid  grid-cols-3 rounded-md py-2.5 invisible lg:visible hidden lg:block">
           <div className="flex flex-col  gap-7  xsm:flex-row">
             <span className="font-semibold text-midblack dark:text-white">
               Buy Crpto

@@ -16,6 +16,12 @@ const ECommerce = () => {
         <ChartTwo />
         <ChartThree />
         <MapOne />
+        <div className="col-span-12 xl:col-span-8">
+          {/* <TableOne /> */}
+        </div>
+        <div className="col-span-12 rounded-sm border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
+          {/* asdasdas */}
+          </div>
         
       </div>
     </>

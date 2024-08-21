@@ -10,17 +10,17 @@ const Footer = () => {
     <div className="rounded-sm border border-stroke bg-bgfooter px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
       
 
-      <div className="flex flex-grow justify-start py-4 px-4 md:px-6 2xl:px-11">
+      <div className="flex flex-grow grid-cols-12 justify-start py-4 px-4 md:px-6 2xl:px-11">
         
-        <div className="flex items-center w-1.5/6 sm:col-12">
+        <div className="grid-cols-12 items-center w-1.5/6 sm:col-12 xl:col-span-4">
         <Link className="block flex-shrink-0" to="/">
           <img src={FooterLeft} alt="Logo" />
         </Link>
 
 
         </div>
-        <div className="grid  grid-cols-4 rounded-md py-2.5 sm:col-12">
-          <div className="flex flex-col  px-3  xsm:flex-row">
+        <div className="grid  grid-cols-12 rounded-md py-2.5 sm:col-12 xl:col-span-8">
+          <div className="flex flex-col col-span-12 align-center justify-center xsm:flex-row xl:col-span-2">
                 <div className="py-4 px-7 dark:border-strokedark">
                   
                   <h3 className="font-bold text-xl text-black dark:text-white pb-2">
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
 
           </div>
-          <div className="flex flex-col  px-3  xsm:flex-row">
+          <div className="flex flex-col col-span-12 align-center justify-center xsm:flex-row xl:col-span-2">
                 <div className="py-4 px-7 dark:border-strokedark">
                   
                   <h3 className="font-bold text-xl text-black dark:text-white pb-2">
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
 
           </div>
-          <div className="flex flex-col  px-3  xsm:flex-row">
+          <div className="flex flex-col col-span-12 align-center justify-center xsm:flex-row xl:col-span-2">
                 <div className="py-4 px-7 dark:border-strokedark">
                   
                   <h3 className="font-bold text-xl text-black dark:text-white pb-2">
@@ -64,7 +64,7 @@ const Footer = () => {
                 </div>
 
           </div>
-          <div className="flex flex-col  px-3  xsm:flex-row">
+          <div className="flex flex-col col-span-12 align-center justify-center xsm:flex-row xl:col-span-2">
                 <div className="py-4 px-7 dark:border-strokedark">
                   
                   <h3 className="font-bold text-xl text-black dark:text-white pb-2">
@@ -77,7 +77,7 @@ const Footer = () => {
                 </div>
 
           </div>
-          <div className="flex flex-col  px-3  xsm:flex-row">
+          <div className="flex flex-col col-span-12 align-center justify-center xsm:flex-row xl:col-span-2">
                 <div className="py-4 px-7 dark:border-strokedark">
                   
                   <h3 className="font-bold text-xl text-black dark:text-white pb-2">
@@ -90,7 +90,7 @@ const Footer = () => {
                 </div>
 
           </div>
-          <div className="flex flex-col  px-3  xsm:flex-row">
+          <div className="flex flex-col col-span-12 align-center justify-center xsm:flex-row xl:col-span-2">
                 <div className="py-4 px-7 dark:border-strokedark">
                   
                   <h3 className="font-bold text-xl text-black dark:text-white pb-2">
@@ -104,7 +104,7 @@ const Footer = () => {
                 </div>
 
           </div>
-          <div className="flex flex-col  px-3  xsm:flex-row">
+          <div className="flex flex-col col-span-12 align-center justify-center xsm:flex-row xl:col-span-2">
                 <div className="py-4 px-7 dark:border-strokedark">
                   
                   <h3 className="font-bold text-xl text-black dark:text-white pb-2">
